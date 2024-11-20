@@ -13,8 +13,8 @@
             margin: 0px;
         }
         .row {
-            background-color: pink;
-            color: blue;
+            background-color: #0B0C10;
+            color: white;
             display: flex;
             justify-content: space-between;
             position: sticky;
@@ -22,6 +22,8 @@
         }
         .row1 {
             display: flex;
+            background-color: #1F2833;
+            color: #66FCF1;
             justify-content: space-around;
             padding: 20px;
             height: 100vh;
@@ -29,38 +31,82 @@
         }
         .row2 {
             display: flex;
-            background-color: lightblue;
+            background-color: #C5C6C7;
             justify-content: space-around;
+            justify-content: space-around;
+            color: #1F2833;
             padding: 20px;
             height: 100vh;
             align-items: center;
         }
         .row3 {
             display: flex;
-            background-color: lightblue;
+            background-color: #1F2833;
             justify-content: space-around;
+            color: #66FCF1;
             padding: 20px;
             height: 100vh;
             align-items: center;
         }
         .row4 {
-            display: flex;
-            background-color: lightblue;
+            background-color: #C5C6C7;
             justify-content: space-around;
+            color: #1F2833;
             padding: 20px;
             height: 100vh;
             align-items: center;
         }
+           
+        
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 10px;
+            background-color: #C5C6C7;
+            color: #1F2833;
+
+        }
         .row5 {
             display: flex;
-            background-color: lightblue;
+            background-color: #1F2833;
             justify-content: space-around;
+            color: #66FCF1;
             padding: 20px;
             height: 100vh;
             align-items: center;
         }
         .box {
             padding: 10px;
+        }
+        .box1{
+            background-color: #1F2833;
+            color: #66FCF1;
+            padding: 10px;
+            margin: 10px;
+            align-items: center;
+
+        }
+        .footer{
+            background-color: #C5C6C7;
+            color: #1F2833;
+            height: 20vh;
+            align-items: center;
+        }
+        li{
+            display: inline;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #66FCF1;
+        }
+        a:hover{
+            background-color:#66FCF1 ;
+            color: #1F2833;
+        }
+        .homeimage{
+            border-radius: 1000px;
         }
     </style>
 </head>
@@ -79,8 +125,9 @@
         <div class="row1" id = "home">
             <div> 
                 <h1> Yahwanth Gummalla </h1> 
-                <h3> Full Stack Developer </h3></div>
-            <div> <img src = "https://picsum.photos/id/68/300/300"> </div>
+                <h3> BTech Computer Science Student | Exploring the World of Tech at Mahindra University </h3></div>
+            <div> <img src = "https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg"
+                class = "homeimage"> </div>
         </div>
         <div class="row2" id = "projects">
             <div> 
@@ -101,13 +148,39 @@
             </div>
         </div>
         <div class="row4" id = "services">
-            <div> 
+            
                 <h1> services </h1> 
-                <ol>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                </ol>
+                
+           <div class = "cards">
+            <div class = "box1">
+                 
+                <img src = "https://img.icons8.com/?size=100&id=aNnXVGkz2Uuu&format=png&color=000000">
+
+                <h4>Full Stack Web Devolopment</h4>
+
+                <p>Design and develop scalable web applications using modern technologies, including front-end, back-end,
+                     and database management, ensuring seamless user experiences and efficient system performance.</p>
+                
             </div>
+            <div class = "box1">
+                  
+                <img src = "https://img.icons8.com/?size=100&id=114322&format=png&color=000000">
+                <h4>Data science</h4>
+                <p>
+                    Analyze and interpret large datasets to uncover patterns, trends, and actionable insights,
+                     helping businesses make data-driven decisions and optimize processes effectively.
+                </p>
+            </div>
+            <div class = "box1">
+                
+                <img src = "https://img.icons8.com/?size=100&id=83IWFlQhyRNZ&format=png&color=000000">
+
+                <h4>AI/ML</h4>
+
+                <p>Build intelligent systems leveraging algorithms and data to provide predictive insights, automation, 
+                    and innovative solutions tailored to complex problems in various industries.</p>
+            </div>
+        </div>
         </div>
         <div class="row5" id = "contact">
             <div> 
@@ -133,5 +206,6 @@
     <a> project 1 </a>
     <hr/>
     <h4> @copyright 2024. All rights are reserved </h4> -->
+    <div class = "footer"> <h1>@copyright 2024. All rights are reserved</h1> </div>
 </body>
 </html>
