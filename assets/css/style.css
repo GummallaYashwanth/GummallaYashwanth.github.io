@@ -1,9 +1,17 @@
 * {
     margin: 0px;
+    scroll-behavior:smooth;
 }
 .container {
     background-color: white;
     margin: 0px;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
 }
 .row {
     background-color: #0B0C10;
@@ -19,7 +27,7 @@
     color: #66FCF1;
     justify-content: space-around;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 .row2 {
@@ -29,7 +37,7 @@
     justify-content: space-around;
     color: #1F2833;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 .row3 {
@@ -38,7 +46,7 @@
     justify-content: space-around;
     color: #66FCF1;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 .row4 {
@@ -46,7 +54,7 @@
     justify-content: space-around;
     color: #1F2833;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
    
@@ -66,7 +74,7 @@
     justify-content: space-around;
     color: #66FCF1;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 .box {
@@ -83,7 +91,7 @@
 .footer{
     background-color: #C5C6C7;
     color: #1F2833;
-    height: 20vh;
+    height: 20%;
     align-items: center;
 }
 li{
@@ -102,7 +110,7 @@ a:hover{
     border-radius: 1000px;
 }
 .service_card{
-    height: 40vh;
+    height: 40%;
     width: 30vw;
     border-radius: 50%;
 }
