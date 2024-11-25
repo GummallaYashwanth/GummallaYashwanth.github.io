@@ -26,7 +26,9 @@
     background-image: url('../images/backimage1.avif');
     background-size: cover; /* Ensure the image covers the entire area */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
+    background-position: center; /*Center the image*/
+
+   
     color: #66FCF1;
     justify-content: space-around;
     padding: 20px;
@@ -74,45 +76,247 @@
 }
 .row2 {
     display: flex;
-    background-color: #C5C6C7;
-    background: linear-gradient(to bottom right, #ffffff, #e6f3ff);
-    
-    justify-content: space-around;
-    justify-content: space-around;
-    color: #1F2833;
-    padding: 20px;
-    height: 100%;
+    flex-direction: column; /* Align heading and cards vertically */
+    background: linear-gradient(to right, #E8F5F5, #B8F2F2);
     align-items: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
+
+.row2_heading {
+    margin-bottom: 50px; /* Add space between heading and cards */
+    text-align: center;
+}
+
+.row2_main-heading {
+    font-size: 2.5rem;
+    color: #1F2833;
+    text-transform: uppercase;
+}
+
+.row2_cards {
+    display: flex;
+    gap: 20px; /* Add space between cards */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.row2_card {
+    background: linear-gradient(to bottom right, #ffffff, #d1f0f0);
+    width: 30%;
+    min-width: 250px; /* Ensure cards don't get too small */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.row2_card:hover {
+    transform: scale(1.05);
+}
+
+.row2_card h2 {
+    color: #1F2833;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.row2_card p {
+    color: #3C4043;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.row2_card .btn {
+    background-color: #1F2833;
+    color: #E8F5F5;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.row2_card .btn:hover {
+    background-color: #3C4043;
+}
+
 .row3 {
     display: flex;
-    background-color: #1F2833;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(to right, #000428, #004e92);
     color: #66FCF1;
-    padding: 20px;
-    height: 100%;
-    align-items: center;
+    padding: 40px 20px;
 }
-.row4 {
-    background-color: #C5C6C7;
-    justify-content: space-around;
-    color: #1F2833;
-    padding: 20px;
-    height: 100%;
-    align-items: center;
+
+.row3_main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
 }
+
+.row3_cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row3_card {
+    background: linear-gradient(to right, #000428, #004e92);
+    color: #e6f1ff;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.row3_card:hover {
+    transform: scale(1.05);
+}
+
+.row3_card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #45cbcd;
+    text-align: center;
+}
+
+.row3_card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.row3_card ul li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.row3_card a.icon_link {
+    background-color: #66FCF1;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.row3_card a.icon_link:hover {
+    background-color: #004e92;
+    color: #fff;
+}
+
+/* Skill Logos */
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: #66FCF1;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    background-color: #004e92;
+}
+
+
    
 
-.cards{
+.services-section {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px;
-    background-color: #C5C6C7;
-    color: #1F2833;
-
+    flex-direction: column; /* Align heading and cards vertically */
+    background: linear-gradient(to right, #E8F5F5, #B8F2F2); /* Gradient background */
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
+
+.services-title {
+    margin-bottom: 50px; /* Space between heading and cards */
+    text-align: center;
+}
+
+.services-title h1 {
+    font-size: 2.5rem;
+    color: #1F2833; /* Dark text for the heading */
+    text-transform: uppercase;
+}
+
+.services-cards {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.service-card {
+    background: linear-gradient(to bottom right, #ffffff, #d1f0f0); /* Gradient background for cards */
+    width: 30%;
+    min-width: 250px; /* Ensure cards don't shrink too much */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Hover effect to lift the card */
+}
+
+.service-card .service-icon {
+    width: 80px; /* Icon size */
+    height: 80px;
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+.service-card h4 {
+    color: #1F2833; /* Dark color for the heading */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #3C4043; /* Slightly lighter text for description */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    background-color: #1F2833; /* Dark background for the button */
+    color: #E8F5F5; /* Light text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.service-card .btn:hover {
+    background-color: #3C4043; /* Hover effect for button */
+}
+
+
 .row5 {
     display: flex;
     background-color: #1F2833;
@@ -150,26 +354,39 @@
     color: #0a192f;
     border-radius: 200px;
 }
-.box1{
-    background-color: #1F2833;
+
+/* Contact Section */
+.row5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #000428, #004e92);
     color: #66FCF1;
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-
-}
-.footer{
-    background-color: #C5C6C7;
-    color: #1F2833;
-    height: 20%;
-    align-items: center;
+    padding: 40px 20px;
 }
 
-.homeimage{
-    border-radius: 1000px;
+.row5 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
 }
-.service_card{
-    height: 40%;
-    width: 25vw;
-    border-radius: 50%;
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon-link {
+    font-size: 2.5rem;
+    color: #66FCF1;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-link:hover {
+    color: #004e92;
+    transform: scale(1.2);
 }
